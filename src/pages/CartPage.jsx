@@ -21,54 +21,44 @@ function CartPage() {
   };
 
   return (
-    <div>
-      <h1>Your Cart</h1>
+    <div className="container-fluid"> {/* Full-width responsiveness */}
+      <h1 className="text-center">Your Cart</h1> {/* Centered heading */}
+    <Container className="my-5"> {/* Added container for responsiveness */}
+      
       {cart.length === 0 ? (
         <p>Your cart is empty.</p> 
       ) : (
-    <Container className="my-5">
-      {" "}
-      <Stack gap={3}>
-        {cart.map((product, index) => (
-          <Card key={index}>
-            <Card.Body style={{ display: '-webkit-inline-flex', justifyContent: 'space-between', alignItems: 'left' }}>
-              
-              <Card.Img className="hover-image" variant="top" src={product.image} style={{ width: '120px', height: '80px' }} />
-              <div style={{  justifyContent: 'space-between', alignItems: 'left', minWidth:'500' , maxWidth: '600px'}}>
-              <div><h3>{product.name}</h3></div>
-              <div>price :  {product.price} EGP</div>
-              </div>
-              <div style={{ display: '-webkit-inline-flex', justifyContent: 'space-between', alignItems: 'left'}}>
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <Button variant="secondary" onClick={() => addToCart(product)}>+</Button>
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  <input type="text" disabled value={`Qty :   ${product.quantity.toFixed(2)}`} style={{ width: '130px', margin: '0 10px' }} />
-                  <input type="text" disabled value={`total :  ${(product.price * product.quantity).toFixed(2)}`} style={{ width: '130px', margin: '0 10px', marginTop: '5px' }} />
+        <Stack gap={3}>
+          {cart.map((product, index) => (
+            <Card key={index}>
+              <Card.Body className="d-flex flex-column flex-md-row justify-content-between align-items-center"> {/* Responsive layout */}
+                <Card.Img className="hover-image" variant="top" src={product.image} style={{ width: '120px', height: '80px' }} />
+                <div className="flex-grow-1 mx-2"> {/* Flex-grow for responsive spacing */}
+                  <h3>{product.name}</h3>
+                  <div>Price: {product.price} EGP</div>
                 </div>
-                <Button variant="secondary" onClick={() => decreaseQuantity(product)}>-</Button>
-              </div>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center',marginLeft: '30px' }}>
-                <Button className="float-end" variant="outline-danger" onClick={() => removeFromCart(product)}>Remove</Button>
+                <div className="d-flex align-items-center">
+                  <Button variant="secondary" onClick={() => addToCart(product)}>+</Button>
+                  <input type="text" disabled value={`Qty: ${product.quantity}`} style={{ width: '50px', margin: '0 10px' }} />
+                  <Button variant="secondary" onClick={() => decreaseQuantity(product)}>-</Button>
+                  <Button variant="outline-danger" onClick={() => removeFromCart(product)}>Remove</Button>
                 </div>
-                </div>
-             
-            </Card.Body>
-          </Card>
-        ))}
-        {/* New field to display total price */}
-        <div style={{ marginTop: '20px', fontSize: '18px', fontWeight: 'bold' }}>
-          Total Price: {totalPrice.toFixed(2)} EGP
-        </div>
-        <div>
-        <Button variant="success" onClick={handleCheckout} style={{ marginTop: '20px' }}>
-          Checkout
-        </Button>
-
-        </div>
-       
-      </Stack>
+              </Card.Body>
+            </Card>
+          ))}
+          {/* New field to display total price */}
+          <div style={{ marginTop: '20px', fontSize: '18px', fontWeight: 'bold' }}>
+            Total Price: {totalPrice.toFixed(2)} EGP
+          </div>
+          <div>
+            <Button variant="success" onClick={handleCheckout} style={{ marginTop: '20px' }}>
+              Checkout
+            </Button>
+          </div>
+        </Stack>
+      )}
     </Container>
-      )} </div>
+    </div>
   );
 }
 export default CartPage;
