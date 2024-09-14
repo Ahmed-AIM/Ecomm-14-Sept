@@ -39,7 +39,10 @@ function CartPage() {
                 </div>
                 <div className="d-flex align-items-center">
                   <Button variant="secondary" onClick={() => addToCart(product)}>+</Button>
-                  <input type="text" disabled value={`Qty: ${product.quantity}`} style={{ width: '50px', margin: '0 10px' }} />
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                  <input type="text" disabled value={`Qty :   ${product.quantity.toFixed(2)}`} style={{ width: '130px', margin: '0 10px' }} />
+                  <input type="text" disabled value={`total :  ${(product.price * product.quantity).toFixed(2)}`} style={{ width: '130px', margin: '0 10px', marginTop: '5px' }} />
+                </div>
                   <Button variant="secondary" onClick={() => decreaseQuantity(product)}>-</Button>
                   <Button variant="outline-danger" onClick={() => removeFromCart(product)}>Remove</Button>
                 </div>
