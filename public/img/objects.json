@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "description": "Description of Product 1",
+      "price": 100,
+      "category": "Category 1",
+      "rating": 4,
+      "photo": "1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "description": "Description of Product 2",
+      "price": 200,
+      "category": "Category 2",
+      "rating": 5,
+      "photo": "2.jpg"
+    },
+    {
+      "id": "89d9",
+      "name": "ytuytuyt",
+      "description": "tutuytu",
+      "price": "222",
+      "category": "tyututu",
+      "rating": "2",
+      "photo": "6.jpg"
+    }
+  ]
+}

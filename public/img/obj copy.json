@@ -1,0 +1,139 @@
+{
+  "products": [
+    {
+      "id": "1u6r",
+      "name": "Elegant Desk Lamp",
+      "description": "A stylish desk lamp with adjustable lighting.",
+      "price": 45.99,
+      "photo": "1.jpg",
+      "category": "Home Decor",
+      "rating": 4.5
+    },
+    {
+      "id": "2a9g",
+      "name": "Bluetooth Headphones",
+      "description": "Noise-cancelling over-ear headphones with high-fidelity sound.",
+      "price": 89.99,
+      "photo": "2.jpg",
+      "category": "Electronics",
+      "rating": 4.7
+    },
+    {
+      "id": "3w5x",
+      "name": "Organic Green Tea",
+      "description": "A refreshing and healthy organic green tea.",
+      "price": 15.5,
+      "photo": "3.jpg",
+      "category": "Beverages",
+      "rating": 4.3
+    },
+    {
+      "id": "4ve2",
+      "name": "Running Shoes",
+      "description": "Lightweight and durable running shoes for everyday athletes.",
+      "price": 120,
+      "photo": "4.jpg",
+      "category": "Sportswear",
+      "rating": 4.6
+    },
+    {
+      "id": "5t0q",
+      "name": "Smartwatch",
+      "description": "A sleek smartwatch with fitness tracking capabilities.",
+      "price": 199.99,
+      "photo": "5.jpg",
+      "category": "Wearables",
+      "rating": 4.4
+    },
+    {
+      "id": "6l8i",
+      "name": "Leather Wallet",
+      "description": "A premium leather wallet with multiple card slots.",
+      "price": 49.99,
+      "photo": "6.jpg",
+      "category": "Accessories",
+      "rating": 4.8
+    },
+    {
+      "id": "7b9o",
+      "name": "Ceramic Dinner Set",
+      "description": "A 16-piece ceramic dinner set with elegant design.",
+      "price": 70,
+      "photo": "7.jpg",
+      "category": "Kitchenware",
+      "rating": 4.2
+    },
+    {
+      "id": "8g7n",
+      "name": "Yoga Mat",
+      "description": "Eco-friendly yoga mat with non-slip surface.",
+      "price": 35,
+      "photo": "8.jpg",
+      "category": "Fitness",
+      "rating": 4
+    },
+    {
+      "id": "n8w2",
+      "name": "Gaming Mouse",
+      "description": "High-precision gaming mouse with customizable buttons.",
+      "price": 59.99,
+      "photo": "9.jpg",
+      "category": "Gaming",
+      "rating": 4.5
+    },
+    {
+      "id": "c2ab",
+      "name": "Waterproof Backpack",
+      "description": "A waterproof backpack suitable for travel and outdoor activities.",
+      "price": 80,
+      "photo": "10.jpg",
+      "category": "Travel Gear",
+      "rating": 4.7
+    }
+  ],
+  "users": [
+    {
+      "id": "88ay",
+      "username": "user1",
+      "name": "User One",
+      "password": "pass1",
+      "profileImage": "image1.png"
+    },
+    {
+      "id": "a3s8",
+      "username": "user2",
+      "name": "User two",
+      "password": "pass2",
+      "profileImage": "image2.png"
+    }
+  ],
+  "cart": [
+    {
+      "id": "5t0q",
+      "name": "Smartwatch",
+      "description": "A sleek smartwatch with fitness tracking capabilities.",
+      "price": 199.99,
+      "photo": "5.jpg",
+      "category": "Wearables",
+      "rating": 4.4
+    },
+    {
+      "id": "n8w2",
+      "name": "Gaming Mouse",
+      "description": "High-precision gaming mouse with customizable buttons.",
+      "price": 59.99,
+      "photo": "9.jpg",
+      "category": "Gaming",
+      "rating": 4.5
+    },
+    {
+      "id": "c2ab",
+      "name": "Waterproof Backpack",
+      "description": "A waterproof backpack suitable for travel and outdoor activities.",
+      "price": 80,
+      "photo": "10.jpg",
+      "category": "Travel Gear",
+      "rating": 4.7
+    }
+  ]
+}
